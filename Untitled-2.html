@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            flex-direction: row;
+
+        }
+
+        .a>div {
+            display: flex;
+            margin: 10px;
+            flex-direction: column;
+            height:600px;
+
+        }
+
+        .a>div>div {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+
+        .a>div>div>div {
+            margin: 10px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div>
+            <div style="flex-grow: 2; align-items: center;">
+                <div style=" height: 150px; width: 100px;"></div>
+                <div style=" height: 120px; width:100px;"></div>
+                <div style=" align-self: flex-start; height: 200px; width:100px;"></div>
+            </div>
+            <div style="justify-content: space-between; align-items: flex-end;"> 
+                <div style=" height: 100px; width: 150px;"></div>
+                <div style=" height: 100px; width: 150px;"></div>
+            </div>
+        </div>
+        <div style="justify-content: center;">
+            <div>
+
+                <div style=" height: 100px; width: 100px;"></div>
+
+            </div>
+        </div>
+        <div>
+            <div style="justify-content: space-between; align-items: flex-start;">
+                <div style="height: 100px; width: 150px;"></div>
+                <div style="height: 100px; width: 150px;"></div>
+            </div>
+            <div style="flex-grow: 2;">
+                <div style="align-self: center; height: 120px; width: 100px;"></div>
+                <div style="align-self: flex-end; height: 200px; width:100px;"></div>
+                <div style=" align-self: center; height: 150px; width:100px;"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
